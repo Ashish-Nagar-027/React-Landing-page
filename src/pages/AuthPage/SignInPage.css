@@ -1,0 +1,115 @@
+.SignIn-container {
+  position: relative;
+  height: 100vh;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+}
+
+
+.formContainer {
+   display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 3rem;
+    border-radius: 21px;
+    color: #fff;
+
+    min-width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.04)
+  );
+  backdrop-filter: blur(0.2rem);
+
+}
+
+
+.formContainer h2 {
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.2rem;
+    margin: 1rem 0px;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.input-container  input {
+    width:100%;
+    outline: none;
+   background: #232426;
+   border-radius: 5px;
+   border: 1px solid white;
+   padding: 10px;
+   color : white
+}
+
+.input-container  label {
+   justify-content: space-between;
+    display: flex;
+    width: 100%;
+    font-weight: bold
+} 
+
+.input-container  label span {
+    color: #C5C336
+}
+
+.btn {
+ background: #FF7B00;
+  padding: 0.5rem 0.6rem;
+  border-radius: 20px;
+  color: white;
+  border:none;
+  cursor: pointer;
+  margin-top: 3.5rem;
+  width: 100%;
+  font-weight: 500;
+  font-size: 1.1rem
+}
+
+.create-account {
+    margin-top: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer
+}
+
+.create-account > span {
+    text-decoration: underline;
+}
+
+.create-account span.sign-up-text {
+    text-decoration: none;
+     color: #C5C336;
+     margin-left: 1rem
+}
+
+#password {
+    position: relative;
+    width: 100%
+}
+
+.eye-icon {
+  position: absolute;
+  right: 15px;
+  top: 25%;
+  cursor: pointer;
+  color: #808080;
+}
+
+@media screen  and (max-width: 650px)  {
+    .formContainer {
+        min-width: 300px
+    }
+}
